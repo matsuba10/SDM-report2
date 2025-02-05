@@ -12,7 +12,10 @@ class TestCalc (unittest.TestCase):
                 self.assertEqual(250000, calc(500, 500))
 
         def test_Valid_values2(self):
-                self.assertEqual(160000,calc(300, 600))
+                self.assertEqual(180000,calc(300, 600))
+
+        def test_Valid_values3(self):
+                self.assertEqual(180000, calc(600, 300))
         
         #境界値付近でのテスト
         def test_boundary_values1(self):
@@ -53,7 +56,7 @@ class TestCalc (unittest.TestCase):
                 self.assertEqual(-1, calc(-100, 999))
         
         def test_Fail_values2(self):
-                self.assertEqual(-1, calc(5000, 6000))
+                self.assertEqual(-1, calc(5000, 4000))
 
         #その他(記号、小数点など)
         def test_other_values1(self):
