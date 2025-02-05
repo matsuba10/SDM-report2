@@ -20,27 +20,33 @@ class TestCalc (unittest.TestCase):
         
         def test_boundary_values2(self):
                 self.assertEqual(-1, calc(0, 1))
-
+        
         def test_boundary_values3(self):
+                self.assertEqual(-1, calc(0, 0))
+
+        def test_boundary_values4(self):
                 self.assertEqual(999, calc(999, 1))
         
-        def test_boundary_values4(self):
+        def test_boundary_values5(self):
                 self.assertEqual(-1, calc(1000, 1))
         
-        def test_boundary_values5(self):
+        def test_boundary_values6(self):
                 self.assertEqual(999, calc(1, 999))
 
-        def test_boundary_values6(self):
+        def test_boundary_values7(self):
                 self.assertEqual(-1, calc(-1, 999))
 
-        def test_boundary_values7(self):
+        def test_boundary_values8(self):
                 self.assertEqual(998001, calc(999, 999))
         
-        def test_boundary_values8(self):
+        def test_boundary_values9(self):
                 self.assertEqual(-1, calc(1000, 999))
         
-        def test_boundary_values9(self):
+        def test_boundary_values10(self):
                 self.assertEqual(-1, calc(999, 1000))
+        
+        def test_boundary_values11(self):
+                self.assertEqual(-1, calc(1000, 1000))
         
         #無効同値でのテスト
         def test_Fail_values1(self):
