@@ -56,20 +56,20 @@ class TestCalc (unittest.TestCase):
                 self.assertEqual(-1, calc(5000, 6000))
 
         #その他(記号、小数点など)
-        def test_other_values5(self):
+        def test_other_values1(self):
                 self.assertEqual(-1, calc(None, 600))
         
-        def test_other_values6(self):
+        def test_other_values2(self):
                 self.assertEqual(-1, calc(500, None))
 
-        def test_other_values1(self):
+        def test_other_values3(self):
                 self.assertEqual(-1, calc('Z', 999))
         
-        def test_other_values2(self):
+        def test_other_values4(self):
                 self.assertEqual(-1, calc(999, 'A'))
         
-        def test_other_values3(self):
+        def test_other_values5(self):
                 self.assertEqual(-1, calc(0.1, 500))
         
-        def test_other_values4(self):
+        def test_other_values6(self):
                 self.assertEqual(-1, calc(500, 0.1))
