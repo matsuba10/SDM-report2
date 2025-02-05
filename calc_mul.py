@@ -9,7 +9,7 @@ def calc(A,B):
 
         p = re.compile('\d+$')
 
-        if p.fullmatch(ai) and p.fullmatch(bi):
+        if p.match(ai) and p.match(bi):
                 a=int(ai)
                 b=int(bi)
 
